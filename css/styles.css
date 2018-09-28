@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Circe';
+  src: local('Circe'), local('Circe-Regular'), url('../fonts/Circe-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: 'Circe', Arial, sans-serif;
+  color: #000000;
+  font-style: normal;
+  /* background-color: ; */
+}
+
+.task-container {
+  width: 915px;
+  text-align: center;
+}
+
+.task__expression {
+  display: inline-block;
+  padding: 20px;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.task__expression__item {
+  display: inline-block;
+  font-size: 36px;
+  padding: 3px 5px 0px 5px;
+}
+
+.attention {
+  background-color: rgb(255, 147, 29);
+  border-radius: 3px;
+}
+
+.task__image {
+  font-size: 0;
+}
+
+.arrow-item {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 80px;
+}
+
+.arrow-input {
+  position: absolute;
+  font-size: 14px;
+  bottom: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  border: 2px solid lightgray;
+  z-index: 10;
+  text-align: center;
+}
+
+.arrow-image {
+  position: absolute;
+  bottom: 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.task__image {
+  width: 875px;
+  height: 143px;
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: left;
+  padding-left: 37px;
+}
+
+.disabled {
+  border: none;
+  user-select: none;
+}
+
+.result-input {
+  border-radius: 3px;
+  border: 2px solid lightgray;
+  z-index: 10;
+  text-align: center;
+}
+
+/* SVG */
+
+path {
+  stroke-width: 2;
+  stroke: #d42f78;
+  stroke-linecap: round;
+  fill: none;
+}
+
+path.fill {
+  fill: #1E1935;
+}

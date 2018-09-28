@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Сложение</title>
+</head>
+
+<body>
+  <template class="task-template">
+    <div class="task task-container">
+      <div class="task__expression">
+        <span class="task__expression__item variable-item-a"></span>
+        <span class="task__expression__item operation-sign">+</span>
+        <span class="task__expression__item variable-item-b"></span>
+        <span class="task__expression__item equals-sign">=</span>
+        <span class="task__expression__item result">?</span>
+      </div>
+      <div class="task__image">
+        <!-- width="40px" height="13px"  -->
+        <!-- viewBox="0 0 780 50" -->
+        <!-- viewBox="0 0 37 48" preserveAspectRatio="none" -->
+        <div class="arrow-item">
+          <input class="arrow-input" type="number" min="0" max="9"/>
+          <svg class="arrow-image" xmlns="http://www.w3.org/2000/svg" width="40px" height="50">
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="3" markerHeight="3" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10" />
+            </marker>
+          </defs>
+          <path  class='arrow-path' d="M0,48 C5,30 32,30 37,48" marker-end="url(#arrow)"/>
+        </svg>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
